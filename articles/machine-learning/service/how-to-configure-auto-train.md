@@ -264,9 +264,9 @@ If you use `preprocess=True`, the following data preprocessing steps are perform
 
 ## Time Series Forecasting
 For time series forecasting task type you have additional parameters to define.
-1. time_horizon_name - This is a required parameter which defines the name of the column in your training data containing date/time series. 
-1. max_horizon - This defines the length of time you want to predict out based on the periodicity of the training data. For example if you have training data with daily time grains, you define how far out in days you want the model to train for.
-1. grain_column_names - This defines the name of columns which contain individual time series data in your training data. For example, if you are forecasting sales of a particular brand by store, you would define store and brand columns as your grain columns.
+1. `time_column_name` - This is a required parameter which defines the name of the column in your training data containing date/time series. 
+1. `max_horizon` - This defines the length of time you want to predict out based on the periodicity of the training data. For example if you have training data with daily time grains, you define how far out in days you want the model to train for.
+1. `grain_column_names` - This defines the name of columns which contain individual time series data in your training data. For example, if you are forecasting sales of a particular brand by store, you would define store and brand columns as your grain columns.
 
 See example of these settings being used below, notebook example is available [here](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/automated-machine-learning/forecasting-orange-juice-sales/auto-ml-forecasting-orange-juice-sales.ipynb).
 
